@@ -1,0 +1,123 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100%;
+    font-family: monospace;
+    background-color: rgb(19, 19, 19);
+    color: white;
+}
+.formdiv{
+    padding: 3% 3%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+    
+}
+::placeholder{
+    color: white;
+}
+form input[type=submit]{
+    width: 100px;
+    background-color: royalblue;
+}
+form input{
+    background-color: rgb(37, 37, 37);
+    outline: none;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    color: white;
+}
+form textarea{
+    background-color: rgb(37, 37, 37);
+    outline: none;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    resize: none;
+    color: white;
+}
+.wrapper{
+    padding: 1% 3%;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.card{
+    padding: 10px 8px;
+    background-color: rgb(37, 37, 37);
+    border-radius: 8px;
+}
+.card a{
+    text-decoration: none;
+    color: royalblue;
+    font-weight: 400;
+    display: inline-block;
+    margin-top: 5px;
+}
+.nocard p{
+    color: red;
+}
+.showdiv{
+    padding: 3% 2% 1% 2%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.showdiv h2{
+    background-color: rgb(37, 37, 37);
+    padding: 10px 15px;
+    border-radius: 8px;
+    width: max-content;
+}
+.showdiv p{
+    background-color: rgb(37, 37, 37);
+    padding: 10px 15px;
+    border-radius: 8px;
+    width: 300px;
+}
+.showdiv a{
+    text-decoration: none;
+    color: royalblue;
+    font-size: 15px;
+    font-weight: 600;
+}
+.menu{
+    padding: 0 2%;
+}
+.menu a{
+    text-decoration: none;
+    background-color: orange;
+    border-radius: 8px;
+    padding: 10px 15px;
+    color: black;
+    font-weight: 600;
+}
+.editdiv{
+    padding: 3% 2%;
+
+}
+.editdiv form input{
+    width: 25%;
+}
+.editdiv form input[type=submit]{
+    text-decoration: none;
+    background-color: rgb(0, 130, 17);
+    border-radius: 8px;
+    padding: 10px 15px;
+    color: black;
+    font-weight: 600;
+    width: 120px;
+}
