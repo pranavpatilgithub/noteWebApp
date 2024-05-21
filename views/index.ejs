@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+<body>
+    <div class="formdiv">
+        <form action="/create" method="post">
+            <input type="text" name="title" id="title" placeholder="Enter title of note" required>
+            <textarea name="details" id="details" placeholder="write note !" required></textarea>
+            <input type="submit" value="Create Task">
+        </form>
+    </div>
+    <div class="wrapper">
+        <% if(files.length > 0) { %>
+            <% files.forEach(function(val){ %>
+                <div class="card">
+                    <h3><%= val %></h3>
+                    <a href="/file/<%= val%>">Read more!</a>
+                </div>
+            <% }) %>
+        <% } else {%>    
+        
+        <div class="nocard">
+            <p>No note yet !</p>
+        </div>
+
+        <%}%>
+    </div>
+</body>
+</html>
